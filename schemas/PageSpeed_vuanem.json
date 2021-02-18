@@ -29,7 +29,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -38,11 +38,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -62,7 +62,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -71,11 +71,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -95,7 +95,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -104,11 +104,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -128,7 +128,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -137,11 +137,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -185,7 +185,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -194,11 +194,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -218,7 +218,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -227,11 +227,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -251,7 +251,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -260,11 +260,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -284,7 +284,7 @@
                         "fields": [
                             {
                                 "name": "percentile",
-                                "type": "INTEGER"
+                                "type": "FLOAT"
                             },
                             {
                                 "name": "distributions",
@@ -293,11 +293,11 @@
                                 "fields": [
                                     {
                                         "name": "min",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "max",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "proportion",
@@ -361,7 +361,7 @@
                     },
                     {
                         "name": "benchmarkIndex",
-                        "type": "INTEGER"
+                        "type": "FLOAT"
                     }
                 ]
             },
@@ -423,7 +423,7 @@
                                     },
                                     {
                                         "name": "weight",
-                                        "type": "INTEGER"
+                                        "type": "FLOAT"
                                     },
                                     {
                                         "name": "group",
