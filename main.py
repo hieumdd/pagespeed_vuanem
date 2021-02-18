@@ -8,12 +8,8 @@ from google.cloud import storage
 class PageSpeedInsights:
     def __init__(self):
         self.api_key = os.environ.get("API_KEY")
-        self.bucket = storage.Client().bucket(os.environ.get("bucket"))
+        self.bucket = storage.Client().bucket(os.environ.get("BUCKET"))
         self.path_to_file = os.environ.get("PATH_TO_FILE")
-
-    def hash(self, data):
-        hash_obj = hashlib.sha1(data.encode())
-        return hash_obj.hexdigest()
 
     def run(self):
         params = {
