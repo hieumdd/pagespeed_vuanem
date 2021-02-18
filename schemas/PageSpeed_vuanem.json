@@ -1,0 +1,526 @@
+[
+    {
+        "name": "captchaResult",
+        "type": "STRING"
+    },
+    {
+        "name": "kind",
+        "type": "STRING"
+    },
+    {
+        "name": "id",
+        "type": "STRING"
+    },
+    {
+        "name": "loadingExperience",
+        "type": "record",
+        "fields": [
+            {
+                "name": "id",
+                "type": "STRING"
+            },
+            {
+                "name": "metrics",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "CUMULATIVE_LAYOUT_SHIFT_SCORE",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FIRST_CONTENTFUL_PAINT_MS",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FIRST_INPUT_DELAY_MS",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "LARGEST_CONTENTFUL_PAINT_MS",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "overall_category",
+                "type": "STRING"
+            },
+            {
+                "name": "initial_url",
+                "type": "STRING"
+            }
+        ]
+    },
+    {
+        "name": "originLoadingExperience",
+        "type": "record",
+        "fields": [
+            {
+                "name": "id",
+                "type": "STRING"
+            },
+            {
+                "name": "metrics",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "CUMULATIVE_LAYOUT_SHIFT_SCORE",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FIRST_CONTENTFUL_PAINT_MS",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "FIRST_INPUT_DELAY_MS",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "LARGEST_CONTENTFUL_PAINT_MS",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "percentile",
+                                "type": "INTEGER"
+                            },
+                            {
+                                "name": "distributions",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "min",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "max",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "proportion",
+                                        "type": "FLOAT"
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "category",
+                                "type": "STRING"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "overall_category",
+                "type": "STRING"
+            },
+            {
+                "name": "initial_url",
+                "type": "STRING"
+            }
+        ]
+    },
+    {
+        "name": "lighthouseResult",
+        "type": "record",
+        "fields": [
+            {
+                "name": "requestedUrl",
+                "type": "STRING"
+            },
+            {
+                "name": "finalUrl",
+                "type": "STRING"
+            },
+            {
+                "name": "lighthouseVersion",
+                "type": "STRING"
+            },
+            {
+                "name": "userAgent",
+                "type": "STRING"
+            },
+            {
+                "name": "fetchTime",
+                "type": "TIMESTAMP"
+            },
+            {
+                "name": "environment",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "networkUserAgent",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "hostUserAgent",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "benchmarkIndex",
+                        "type": "INTEGER"
+                    }
+                ]
+            },
+            {
+                "name": "configSettings",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "emulatedFormFactor",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "formFactor",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "locale",
+                        "type": "STRING"
+                    },
+                    {
+                        "name": "onlyCategories",
+                        "type": "STRING",
+                        "mode": "repeated"
+                    },
+                    {
+                        "name": "channel",
+                        "type": "STRING"
+                    }
+                ]
+            },
+            {
+                "name": "categories",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "performance",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "id",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "title",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "score",
+                                "type": "FLOAT"
+                            },
+                            {
+                                "name": "auditRefs",
+                                "type": "record",
+                                "mode": "repeated",
+                                "fields": [
+                                    {
+                                        "name": "id",
+                                        "type": "STRING"
+                                    },
+                                    {
+                                        "name": "weight",
+                                        "type": "INTEGER"
+                                    },
+                                    {
+                                        "name": "group",
+                                        "type": "STRING"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "timing",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "total",
+                        "type": "FLOAT"
+                    }
+                ]
+            },
+            {
+                "name": "i18n",
+                "type": "record",
+                "fields": [
+                    {
+                        "name": "rendererFormattedStrings",
+                        "type": "record",
+                        "fields": [
+                            {
+                                "name": "varianceDisclaimer",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "opportunityResourceColumnLabel",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "opportunitySavingsColumnLabel",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "errorMissingAuditInfo",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "errorLabel",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "warningHeader",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "auditGroupExpandTooltip",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "passedAuditsGroupTitle",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "notApplicableAuditsGroupTitle",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "manualAuditsGroupTitle",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "toplevelWarningsMessage",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "crcLongestDurationLabel",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "crcInitialNavigation",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "lsPerformanceCategoryDescription",
+                                "type": "STRING"
+                            },
+                            {
+                                "name": "labDataTitle",
+                                "type": "STRING"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "analysisUTCTimestamp",
+        "type": "TIMESTAMP"
+    }
+]

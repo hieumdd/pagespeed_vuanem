@@ -13,7 +13,7 @@ jobs:
         uses: google-github-actions/deploy-cloud-functions@v0.1.2
         with:
           credentials: ${{ secrets.GCP_SA_KEY }}
-          name: PageSpeedVuaNem
+          name: PageSpeed_vuanem
           env_vars: "API_KEY=${{ secrets.API_KEY }},\
             BUCKET=${{ secrets.BUCKET }},\
             PATH_TO_FILE=${{ secrets.PATH_TO_FILE }}"

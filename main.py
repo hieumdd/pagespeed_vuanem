@@ -20,12 +20,14 @@ class PageSpeedInsights:
         with requests.get(
             "https://www.googleapis.com/pagespeedonline/v5/runPagespeed", params=params
         ) as r:
-            blob = self.bucket.blob(
-                self.path_to_file
-                + hashlib.sha1(json.dumps(r.json()).encode()).hexdigest()
-                + ".json"
-            )
-            blob.upload_from_string(json.dumps(r.json()))
+            results = r.json()
+        results["lighthouseResult"].pop("audits")
+        results["lighthouseResult"].pop("categoryGroups")
+        results_str = json.dumps(results)
+        blob = self.bucket.blob(
+            self.path_to_file + hashlib.sha1(results_str.encode()).hexdigest() + ".json"
+        )
+        blob.upload_from_string(results_str)
 
 
 def main(request):
